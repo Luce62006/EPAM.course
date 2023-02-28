@@ -38,7 +38,7 @@ function getType(arg) {
 getType(123) //number
 
 
-const isPrime = num => {
+ export default function  isPrime (num) {
     for(let i = 2, s = Math.sqrt(num); i <= s; i++) {
         if(num % i === 0) return false;
     }
