@@ -17,12 +17,14 @@ getA() //let должен быть объявлен перед использо�
        // 3
 
 
-function divide() {
-    const result = 1 / 0
-    if (result === Infinity) {
+function divide(a,b) {
+    const result  = a/b
+    if (b === 0) {
         console.log('cannot be divided by zero')
+        return
     }
+    return console.log(result)
 }
 
-divide() //cannot be divided by zero
+divide(1,0) //cannot be divided by zero
 
