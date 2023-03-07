@@ -18,12 +18,8 @@ getA() //let должен быть объявлен перед использо�
 
 
 function divide(a,b) {
-    const result  = a/b
-    if (b === 0) {
-        console.log('cannot be divided by zero')
-        return
-    }
-    return console.log(result)
+    if (b === 0) throw new Error('cannot be divided by zero')
+    return console.log(a/b)
 }
 
 divide(1,0) //cannot be divided by zero
